@@ -12,3 +12,9 @@ body {
 #cart {
   width:50px;
 }
+
+#cart-number {
+  position: absolute;
+  top: 14px;
+  left: -3px;
+}
