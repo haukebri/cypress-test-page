@@ -1,0 +1,23 @@
+{
+  "name": "cypress-test-page",
+  "version": "1.0.0",
+  "description": "This project provides a very basic website which can be automatically tested by cypress. The website is plain HTML and vanilla Javascript. There is no need for any frameworks.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx cypress open",
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haukebri/cypress-test-page.git"
+  },
+  "author": "Hauke Brinkmann haukebr@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haukebri/cypress-test-page/issues"
+  },
+  "homepage": "https://github.com/haukebri/cypress-test-page#readme",
+  "devDependencies": {
+    "cypress": "^5.0.0"
+  }
+}
