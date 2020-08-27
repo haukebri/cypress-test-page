@@ -18,3 +18,14 @@ body {
   top: 14px;
   left: -3px;
 }
+
+#cartitems li {
+  margin-bottom:5px;
+
+}
+
+#deliverytruck {
+  transition: all 2s ease-out;
+  position:relative;
+  left:0;
+}
