@@ -129,11 +129,15 @@
   </div>
 
   <script src="../assets/js/shop-logic.js"></script>
-
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script>
+
+
+
+
     // Fake API Call
     window.setTimeout(()=>{
-      fetch('https://jsonplaceholder.typicode.com/albums')
+      axios.get('https://jsonplaceholder.typicode.com/albums')
         .then(()=>{
           window.setTimeout(()=>{
             document.getElementById("product-list").style.display = "flex"
