@@ -27,3 +27,11 @@ function deliver(){
   document.getElementById("deliverytruck").style.left = "120%"
   document.getElementById("cartitems").innerHTML= ""
 }
+
+function addChocolate(){
+  document.getElementById("ice-creator-chocolate").style.display = "block"
+}
+
+function addStrawberry(){
+  document.getElementById("ice-creator-strawberry").style.display = "block"
+}

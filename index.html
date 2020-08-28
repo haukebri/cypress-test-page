@@ -68,6 +68,41 @@
     Bla? Bla bla! 
   </div>
 
+  <!-- Ice cream config -->
+  <div class="container mx-auto">
+    <h3 class="text-xl font-bold text-purple-600 my-8 text-center">Creator</h3>
+
+    <div class="flex justify-center">
+      <div>
+        <p class="text-gray-600 mb-2">
+          Add things as you like!
+        </p>
+        <button onclick="addChocolate()" class="block bg-purple-600 py-2 my-4 px-6 w-full text-white">
+          Add Chocolate drops
+        </button>
+        <button onclick="addStrawberry()" class="block bg-purple-600 py-2 my-4 px-6 w-full text-white">
+          Add a strawberry
+        </button>
+      </div>
+      <div class="pl-4">
+        <p class="text-gray-600 mb-2">
+          Your creation
+        </p>
+        <div class="relative pt-8">
+          <img class="w-48" src="assets/icecream/007-ice-cream.svg" alt="">
+          <img id="ice-creator-chocolate" class="w-12 absolute hidden" style="top: 20px;left: 50px;transform: rotate(-14deg);" src="assets/icecream/050-chocolate-chip.svg" alt="">
+          <img id="ice-creator-strawberry" class="w-16 absolute hidden" style="top: 11px;left: 110px;transform: rotate(24deg);" src="assets/icecream/047-strawberry.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center mt-6">
+      <button onclick="addToCard('Your custom created icecream')" class="bg-purple-600 py-2 px-6 my-4 mx-auto text-white">
+        Add your creation to the cart
+      </button>
+    </div>
+
+  </div>
+
   <!-- Footer -->
   <div class="container bg-teal-200 mt-32 py-16 px-8 mx-auto">
     <a data-cy="footer-link" class="underline text-teal-700" href="imprint.html">This is a footer link which should be visible</a>
