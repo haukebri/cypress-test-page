@@ -3,6 +3,13 @@
 
     before(() => {
       cy.visit('/')
+      /*
+      If your environment has a basic-auth / htaccess, add the credentials as an option:
+      cy.visit("/", {auth: {
+        username: 'user',
+        password: 'pass'
+      }});
+      */
     })
 
     it('Header and footer', () => {
@@ -28,7 +35,7 @@
     })
 
     it('Links are working', ()=>{
-      cy.get('[data-cy="all-products-link"]').click()
+      cy.get('[data-cy="all-products-link"]').click({ force: true }) // Bad practice! Never use force if you don't have to
       cy.url().should('contain', 'products')
 
       cy.visit('/')
