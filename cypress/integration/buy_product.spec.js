@@ -5,7 +5,7 @@
       cy.visit('/')
     })
 
-    it('Happy path', () => {
+    it('Order process', () => {
       cy.get('[data-cy="cart-amount"]').contains('0')
       cy.get('[data-cy="topseller-item"]').first().find('button').click()
       cy.get('[data-cy="cart-amount"]').contains('1')
