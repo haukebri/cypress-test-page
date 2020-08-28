@@ -1,3 +1,4 @@
+/// <reference types="Cypress" />
 
   describe('Buying a Product', () => {
 
