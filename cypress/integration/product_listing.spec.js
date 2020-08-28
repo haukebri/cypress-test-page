@@ -6,11 +6,12 @@
     })
 
     it('Loading products', ()=>{
-      cy.server()
-      cy.route('GET', '**/albums').as('albums');
+      // Setup to wait for a route
+      cy.server() // Start the cypress server to be able to fetch xhr requests
+      cy.route('GET', '**/albums').as('albums'); // Name the route
 
       cy.get('[data-cy="product-list-loading"]').should('be.visible')
-      cy.wait('@albums');
+      cy.wait('@albums'); // Wait for the route to return a 2xx status
 
       cy.get('[data-cy="product-list-loading"]').should('not.be.visible')
       cy.get('[data-cy="product-list-item"]').should('be.visible')
