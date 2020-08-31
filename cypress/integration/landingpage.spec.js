@@ -4,13 +4,6 @@
 
     beforeEach(() => {
       cy.visit('/')
-      /*
-      If your environment has a basic-auth / htaccess, add the credentials as an option:
-      cy.visit("/", {auth: {
-        username: 'user',
-        password: 'pass'
-      }});
-      */
     })
 
     it('Header and footer', () => {
