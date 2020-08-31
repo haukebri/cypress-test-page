@@ -2,7 +2,7 @@
 
   describe('Landingpage Content', () => {
 
-    before(() => {
+    beforeEach(() => {
       cy.visit('/')
       /*
       If your environment has a basic-auth / htaccess, add the credentials as an option:
