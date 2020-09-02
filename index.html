@@ -17,9 +17,9 @@
       <div class="flex">
         <img id="logo" src="assets/logo.png" alt="">
       </div>
-      <div class="relative" onclick="openCart()" >
-        <img id="cart" src="assets/icecream/cart.svg" alt="">
-        <span id="cart-number" class="text-blue-700 font-bold">0</span>
+      <div  class="relative" onclick="openCart()" >
+        <img data-cy="cart" id="cart" src="assets/icecream/cart.svg" alt="">
+        <span data-cy="cart-amount" id="cart-number" class="text-blue-700 font-bold">0</span>
       </div>
     </div>
   </div>
@@ -28,20 +28,20 @@
   <div class="container mx-auto ">
     <h2 class="text-xl font-bold text-orange-600 mb-4">Top Sellers</h2>
     <div class="flex">
-      <div class="w-1/3 bg-orange-200 mr-6 px-6 py-6 text-center">
+      <div data-cy="topseller" class="w-1/3 bg-orange-300 mr-6 px-6 py-6 text-center">
         <img class="w-2/3 mx-auto" src="assets/icecream/019-pancake.svg" alt="">
         <span class="text-orange-600 block p-8">Lovely pankakes</span>
-        <button onclick="addToCard('Lovely pankakes')" class="bg-orange-600 py-2 px-6 text-white">Into cart</button>
+        <button data-cy="topseller-submit" onclick="addToCard('Lovely pankakes')" class="bg-orange-600 py-2 px-6 text-white">Into cart</button>
       </div> 
-      <div class="w-1/3 bg-orange-200 mr-6 px-6 py-6 text-center">
+      <div data-cy="topseller" class="w-1/3 bg-orange-300 mr-6 px-6 py-6 text-center">
         <img class="w-2/3 mx-auto" src="assets/icecream/020-ice-cream-sandwich.svg" alt="">
         <span class="text-orange-600 block p-8">Icecream sandwich</span>
-        <button onclick="addToCard('Icecream sandwich')" class="bg-orange-600 py-2 px-6 text-white">Into cart</button>
+        <button data-cy="topseller-submit" onclick="addToCard('Icecream sandwich')" class="bg-orange-600 py-2 px-6 text-white">Into cart</button>
       </div> 
-      <div class="w-1/3 bg-orange-200 px-6 py-6 text-center">
+      <div  data-cy="topseller" class="w-1/3 bg-orange-300 px-6 py-6 text-center">
         <img class="w-2/3 mx-auto" src="assets/icecream/011-icecream.svg" alt="">
         <span class="text-orange-600 block p-8">Happiness in a cup</span>
-        <button onclick="addToCard('Happiness in a cup')" class="bg-orange-600 py-2 px-6 text-white">Into cart</button>
+        <button data-cy="topseller-submit" onclick="addToCard('Happiness in a cup')" class="bg-orange-600 py-2 px-6 text-white">Into cart</button>
       </div> 
     </div>
   </div>
@@ -73,15 +73,15 @@
   </div>
 
   <!-- Fly-In Cart -->
-  <div id="cart-fly-in" class="hidden overflow-hidden fixed top-0 right-0 min-h-screen bg-purple-300 w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4">
+  <div data-cy="cart-fly-in" id="cart-fly-in" class="hidden overflow-hidden fixed top-0 right-0 min-h-screen bg-purple-300 w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4">
     <div onclick="closeCart()" class="absolute top-0 text-purple-600 right-0 mt-4 mr-4 cursor-pointer">X</div>
     <h3 class="text-xl font-bold text-purple-600 my-8">Your cart contains:</h3>
-    <ul id="cartitems" class="text-gray-700">
+    <ul data-cy="cart-fly-in-items" id="cartitems" class="text-gray-700">
     </ul>
 
     <div class="absolute bottom-0 mb-16 w-full overflow-hidden">
       <img class="w-32" id="deliverytruck" src="assets/icecream/029-ice-cream-truck.svg" alt="">
-      <button onclick="deliver()" class="bg-red-600 py-6  px-6 w-full text-white text-xl">
+      <button data-cy="cart-fly-in-submit" onclick="deliver()" class="bg-red-600 py-6  px-6 w-full text-white text-xl">
         Deliver quickly!
       </button>
     </div>

@@ -1,3 +1,4 @@
 {
-  "baseUrl": "https://haukebri.github.io/cypress-test-page"
+  "baseUrl_": "https://haukebri.github.io/cypress-test-page",
+  "baseUrl": "http://localhost:8000"
 }
