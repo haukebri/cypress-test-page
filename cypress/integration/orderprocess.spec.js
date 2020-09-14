@@ -9,6 +9,7 @@ it('topseller', ()=>{
 })
 
 it('Order process', ()=>{
+  cy.visit('/')
   cy.get('[data-cy="cart-amount"]').contains('0')
   cy.get('[data-cy="topseller-submit"]').first().click()
   cy.get('[data-cy="cart-amount"]').contains('1')
